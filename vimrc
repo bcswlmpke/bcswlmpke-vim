@@ -74,6 +74,8 @@ endif
 
 "colorscheme
 color billw
+"set background = dark
+"colorscheme solarized
 
 "Comment
 if ! has ('gui')
@@ -132,32 +134,12 @@ augroup END
 " select ALL
 map <c-a> ggVG
 
-
-" NERDTree
-nnoremap <silent> <F2> :NERDTreeToggle<CR>
-let NERDTreeShowBookmarks  = 1
-
 " easy motion
 let g:EasyMotion_leader_key = '<Leader>'
-
-" mini buffer explorer
-let g:miniBufExplModSelTarget = 1
-let g:miniBufExplorerMoreThanOne = 2
-let g:miniBufExplModSelTarget = 0
-let g:miniBufExplUseSingleClick = 1
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplVSplit = 25
-let g:miniBufExplSplitBelow= 1
-noremap <F3> :TMiniBufExplorer<cr>
-noremap <F7> :bp<cr>
-noremap <F8> :bn<cr>
 
 " run scripts
 autocmd BufRead,BufNewFile *.rb map <D-CR> :% w !ruby<CR>
 autocmd BufRead,BufNewFile *.py map <D-CR> :% w !python<CR>
-
-
-
 
 
 " vimrc statusline show current date and time
@@ -201,15 +183,16 @@ highlight MBEVisibleChanged term=bold cterm=bold gui=bold guibg=LightRed guifg=W
 
 "NERDTree
 let g:NERDTreeWinPos = "right"
-"nnoremap <silent> <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <F4> :NERDTreeToggle<CR>
 let NERDTreeShowBookmarks = 1
 "nmap <leader>n :NERDTreeToggle<CR>
-map <F4> :NERDTreeToggle<CR>
+"map <F4> :NERDTreeToggle<CR>
+
 
 
 ""taglist.vim
-"let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-nmap <leader>g :TlistToggle<CR>
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+nnoremap <silent> <F3> :TlistToggle<CR>
 let Tlist_Show_One_File = 1     
 let Tlist_Use_Right_Window = 0 
 let Tlist_WinWidth = 30
