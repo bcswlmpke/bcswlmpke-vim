@@ -1,19 +1,19 @@
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
-set columns = 120
-set lines = 40
+set columns=120
+set lines=40
 set nocompatible
-set history = 50
-set undolevels = 100
+set history=50
+set undolevels=100
 set ruler
 set autoread " auto read when file is changed from outside
-set linespace = 0
+set linespace=0
 set cursorline
 set nofoldenable
 set ic
 set number
-set numberwidth = 5
+set numberwidth=5
 set title
 set showmode
 set nobomb
@@ -21,13 +21,10 @@ set nostartofline
 set autoindent
 set smartindent
 set cindent
-set backspace = 2
-set backspace = indent,eol,start
+set backspace=2
+"set backspace=indent,eol,start
 set showmatch
-set langmenu = none
-
-
-
+set langmenu=none
 
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
@@ -37,7 +34,7 @@ syntax on		" syntax highlight
 set hlsearch		" search highlighting
 set incsearch
 syntax enable
-set t_Co = 256
+set t_Co=256
 
 set nobackup		" no *~ backup files
 set noswapfile
@@ -47,12 +44,12 @@ set ignorecase		" ignore case when searching
 set smartcase		"
 set smarttab		" insert tabs on the start of a line according to
 set expandtab        "replace <TAB> with spaces
-set tabstop = 4
-set softtabstop = 4
-set shiftwidth = 4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 au FileType Makefile set noexpandtab
 set nowrap
-set updatetime = 500
+set updatetime=500
 set hidden
 
 " File format
@@ -89,10 +86,6 @@ hi CursorLine guibg=#25587e
 hi TabLine          guifg=#414141     guibg=#000000  gui=none
 hi TabLineFill      guifg=#f6f3e8     guibg=#202020  gui=none
 hi TabLineSel       guifg=#f6f3e8     guibg=#414141  gui=none 
-
-
-
-
 
 " disable sound on errors
 set visualbell
@@ -192,7 +185,7 @@ let NERDTreeShowBookmarks = 1
 
 ""taglist.vim
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-nnoremap <silent> <F3> :TlistToggle<CR>
+"nnoremap <silent> <F3> :TlistToggle<CR>
 let Tlist_Show_One_File = 1     
 let Tlist_Use_Right_Window = 0 
 let Tlist_WinWidth = 30
@@ -200,9 +193,8 @@ let Tlist_Sort_Type = "name"
 let tlist_objc_settings = 'objc;i:interface;c:class;m:method;p:property'
 
 ""tagbar
-"nmap <silent> <F3> :TagbarToggle<CR>
-"nmap <leader>g :TagbarToggle<CR>
-"let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
+nmap <silent> <F3> :TagbarToggle<CR>
+let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_width = 30
 let g:tagbar_left = 1
 let g:tagbar_objc_settings = 'objc;i:interface;c:class;m:method;p:property'
