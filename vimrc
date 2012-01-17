@@ -127,9 +127,6 @@ augroup END
 " select ALL
 map <c-a> ggVG
 
-" easy motion
-let g:EasyMotion_leader_key = '<Leader>'
-
 " run scripts
 autocmd BufRead,BufNewFile *.rb map <D-CR> :% w !ruby<CR>
 autocmd BufRead,BufNewFile *.py map <D-CR> :% w !python<CR>
@@ -201,6 +198,11 @@ let g:tagbar_objc_settings = 'objc;i:interface;c:class;m:method;p:property'
 
 ""autocmd
 autocmd BufRead,BufNewFile *.mm :set ft=objc
+
+""Command-T
+let g:CommandTMaxFiles=20000
+nnoremap <silent> <F2> :CommandT<CR>
+nnoremap <silent> <F1> :CommandTBuffer<CR>
 
 
 
