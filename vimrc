@@ -223,6 +223,11 @@ nnoremap <silent> <F1> :CommandTBuffer<CR>
   autocmd filetype php set omnifunc=phpcomplete#CompletePHP
   autocmd FileType ruby set omnifunc=rubycomplete#Complete
 
+  let g:rubycomplete_buffer_loading = 1
+  let g:rubycomplete_classes_in_global = 1
+  let g:rubycomplete_rails = 1
+
+
   " use syntax complete if nothing else available
   if has("autocmd") && exists("+omnifunc")
     autocmd Filetype *
