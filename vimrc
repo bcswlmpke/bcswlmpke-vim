@@ -209,3 +209,30 @@ nnoremap <silent> <F1> :CommandTBuffer<CR>
 
 
 
+
+" enable omni completion. (ctrl-x ctrl-o)
+  set cot=menuone,preview
+  autocmd insertleave * if pumvisible() == 0|pclose|endif
+  autocmd filetype html,markdown setlocal omnifunc=htmlcomplete#Completetags
+  autocmd filetype javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd filetype python setlocal omnifunc=pythoncomplete#Complete
+  autocmd filetype xml setlocal omnifunc=xmlcomplete#completetags
+  autocmd filetype css set omnifunc=csscomplete#CompleteCSS
+  autocmd filetype c set omnifunc=ccomplete#Complete
+  autocmd filetype java set omnifunc=javacomplete#Complete
+  autocmd filetype php set omnifunc=phpcomplete#CompletePHP
+  autocmd FileType ruby set omnifunc=rubycomplete#Complete
+
+  " use syntax complete if nothing else available
+  if has("autocmd") && exists("+omnifunc")
+    autocmd Filetype *
+          \	if &omnifunc == "" |
+          \		setlocal omnifunc=syntaxcomplete#Complete |
+          \	endif
+  endif
+
+
+  " make CSS omnicompletion work for SASS and SCSS
+  autocmd BufNewFile,BufRead *.scss             set ft=scss.css
+  autocmd BufNewFile,BufRead *.sass             set ft=sass.css
+
