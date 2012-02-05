@@ -159,6 +159,13 @@ map! <C-S><ESC> :w<CR>
 
 map <C-A> ggVG<CR>
 
+"autocomplpop
+let g:acp_completeOption = '.,w,b,u,t,i,k'
+let g:acp_behaviorSnipmateLength=1 " 同時snipMate.vim 也要修改加入一個函式
+
+
+
+
 "easymotion
 let g:EasyMotion_leader_key = ","
 
