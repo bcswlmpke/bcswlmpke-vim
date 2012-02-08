@@ -2,7 +2,7 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 set columns=120
-set lines=40
+set lines=25
 set nocompatible
 set history=50
 set undolevels=100
