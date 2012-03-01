@@ -211,9 +211,15 @@ let g:CommandTMaxFiles=20000
 nnoremap <silent> <F2> :CommandT<CR>
 nnoremap <silent> <F1> :CommandTBuffer<CR>
 
-
-
-
+""Source Explorer settings
+let g:SrcExpl_winHeight = 8
+let g:SrcExpl_refreshTime = 100
+let g:SrcExpl_jumpKey = "<ENTER>"
+let g:SrcExpl_gobackKey = "<SPACE>"
+let g:SrcExpl_isUpdateTags = 0
+let g:SrcExpl_updateTagsCmd = "ctags --sort=foldcase -R ."
+let g:SrcExpl_updateTagsKey = "<F12>"
+nnoremap <silent> <F8> :SrcExplToggle<CR>
 
 
 
