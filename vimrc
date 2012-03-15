@@ -184,7 +184,7 @@ let NERDTreeShowBookmarks = 1
 
 ""taglist.vim
 let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-"nnoremap <silent> <F3> :TlistToggle<CR>
+nnoremap <silent> <F3> :TlistToggle<CR>
 let Tlist_Show_One_File = 1     
 let Tlist_Use_Right_Window = 0 
 let Tlist_WinWidth = 30
@@ -192,7 +192,7 @@ let Tlist_Sort_Type = "name"
 let tlist_objc_settings = 'objc;i:interface;c:class;m:method;p:property'
 
 ""tagbar
-nmap <silent> <F3> :TagbarToggle<CR>
+"nmap <silent> <F3> :TagbarToggle<CR>
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_width = 30
 let g:tagbar_left = 1
