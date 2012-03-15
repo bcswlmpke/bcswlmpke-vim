@@ -1,7 +1,8 @@
 if has("gui_macvim") && has("gui_running")
-  set guifont=Monaco:h12
+  set guifont=Monaco:h17
   set transparency=2
   set guioptions=aAce
+  set antialias
   set clipboard+=unnamed
   macmenu &File.New\ Tab key=<nop>
   map <D-t> :CommandT<CR>

@@ -73,6 +73,7 @@ endif
 color billw
 "set background = dark
 "colorscheme solarized
+"colorscheme rails_envy
 
 "Comment
 if ! has ('gui')
