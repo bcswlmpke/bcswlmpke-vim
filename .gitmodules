@@ -43,3 +43,6 @@
 [submodule "bundle/vim-powerline.vim"]
 	path = bundle/vim-powerline.vim
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "bundle/vim-easytags"]
+	path = bundle/vim-easytags
+	url = https://github.com/xolox/vim-easytags.git

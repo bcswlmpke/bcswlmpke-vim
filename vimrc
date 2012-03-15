@@ -70,10 +70,10 @@ endif
 "set gfn=Dina:h9 gfw=MingLiU:h11
 
 "colorscheme
-color billw
+"color billw
 "set background = dark
 "colorscheme solarized
-"colorscheme rails_envy
+colorscheme rails_envy
 
 "Comment
 if ! has ('gui')
@@ -159,6 +159,9 @@ let g:acp_completeOption = '.,w,b,u,t,i,k'
 let g:acp_behaviorSnipmateLength=1 " 同時snipMate.vim 也要修改加入一個函式
 
 
+"EasyTags
+let g:easytags_cmd = '/usr/local/bin/ctags'
+let g:easytags_dynamic_files = 1
 
 
 "easymotion
