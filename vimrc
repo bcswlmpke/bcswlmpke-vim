@@ -162,6 +162,9 @@ let g:acp_behaviorSnipmateLength=1 " 同時snipMate.vim 也要修改加入一個
 "EasyTags
 let g:easytags_cmd = '/usr/local/bin/ctags'
 let g:easytags_dynamic_files = 1
+let g:easytags_updatetime_autodisable = 1
+let g:easytags_updatetime_min = 10000
+let g:easytags_on_cursorhold = 0
 
 
 "easymotion
