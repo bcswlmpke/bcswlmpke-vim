@@ -146,12 +146,6 @@ endif
 
 set pheader=%<%f%h%m\ %40{strftime(\"%c\",getftime(expand(\"%%\")))}%=Page\ %N
 
-
-
-
-
-
-
 "key mapping
 let mapleader = ","
 
@@ -254,4 +248,5 @@ nnoremap <silent> <F8> :SrcExplToggle<CR>
   " make CSS omnicompletion work for SASS and SCSS
   autocmd BufNewFile,BufRead *.scss             set ft=scss.css
   autocmd BufNewFile,BufRead *.sass             set ft=sass.css
+
 
