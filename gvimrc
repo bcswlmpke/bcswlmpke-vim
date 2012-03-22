@@ -1,5 +1,5 @@
 if has("gui_macvim") && has("gui_running")
-  set guifont=Monaco:h17
+  set guifont=Monaco:h14
   set transparency=2
   set guioptions=aAce
   set antialias
