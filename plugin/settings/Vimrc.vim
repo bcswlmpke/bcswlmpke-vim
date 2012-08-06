@@ -257,4 +257,9 @@ nnoremap <silent> <F8> :SrcExplToggle<CR>
   autocmd BufNewFile,BufRead *.scss             set ft=scss.css
   autocmd BufNewFile,BufRead *.sass             set ft=sass.css
 
-
+" Ruby
+if executable("ruby")
+  autocmd BufRead,BufNewFile *.rb map <F5> :% w !ruby -w<CR>
+else
+  autocmd BufRead,BufNewFile *.rb map <F5> :echo "you need to install Ruby first!"<CR>
+endif
