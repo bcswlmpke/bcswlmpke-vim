@@ -107,11 +107,12 @@ map <leader>0 :topleft 100 :split README.md<CR>
 "set gfn=Dina:h9 gfw=MingLiU:h11
 
 "colorscheme
-color billw
+"color billw
 "set background = dark
 "colorscheme solarized
 "colorscheme rails_envy
 "color ir_black
+color codeschool
 
 "Comment
 if ! has ('gui')
