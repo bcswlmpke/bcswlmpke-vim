@@ -112,7 +112,9 @@ map <leader>0 :topleft 100 :split README.md<CR>
 "colorscheme solarized
 "colorscheme rails_envy
 "color ir_black
-color codeschool
+"color codeschool
+color jellybeans
+
 
 "Comment
 if ! has ('gui')
@@ -169,7 +171,7 @@ map <C-A> ggVG<CR>
 
 "autocomplpop
 let g:acp_completeOption = '.,w,b,u,t,i,k'
-let g:acp_behaviorSnipmateLength=1 " 同時snipMate.vim 也要修改加入一個函式
+let g:acp_behaviorSnipmateLength=0 " 同時snipMate.vim 也要修改加入一個函式
 
 
 "EasyTags
@@ -264,3 +266,12 @@ if executable("ruby")
 else
   autocmd BufRead,BufNewFile *.rb map <F5> :echo "you need to install Ruby first!"<CR>
 endif
+
+"ruby
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+"improve autocomplete menu color
+highlight Pmenu ctermbg=238 gui=bold
+
