@@ -105,15 +105,17 @@ map <leader>0 :topleft 100 :split README.md<CR>
 
 "font
 "set gfn=Dina:h9 gfw=MingLiU:h11
-
 "colorscheme
 "color billw
-"set background = dark
-"colorscheme solarized
+"
+set background=dark
+colorscheme solarized
+
 "colorscheme rails_envy
 "color ir_black
 "color codeschool
-color jellybeans
+"color jellybeans
+"color darkblue
 
 
 "Comment
@@ -121,6 +123,13 @@ if ! has ('gui')
     highlight Comment ctermfg=gray ctermbg=darkblue
 else 
     highlight Comment guifg=gray guibg=darkblue
+endif
+
+"solarized
+if has('gui_running')
+  set background=dark "light
+else
+  set background=dark
 endif
 
 "CursorLine
@@ -171,7 +180,7 @@ map <C-A> ggVG<CR>
 
 "autocomplpop
 let g:acp_completeOption = '.,w,b,u,t,i,k'
-let g:acp_behaviorSnipmateLength=0 " 同時snipMate.vim 也要修改加入一個函式
+"let g:acp_behaviorSnipmateLength=0 " 同時snipMate.vim 也要修改加入一個函式
 
 
 "EasyTags
