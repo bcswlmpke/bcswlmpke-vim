@@ -117,12 +117,13 @@ colorscheme solarized
 "color jellybeans
 "color darkblue
 
-
 "Comment
 if ! has ('gui')
     highlight Comment ctermfg=gray ctermbg=darkblue
 else 
     highlight Comment guifg=gray guibg=darkblue
+    au InsertLeave * hi Cursor guibg=red
+    au InsertEnter * hi Cursor guibg=green
 endif
 
 "solarized
