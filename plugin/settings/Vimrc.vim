@@ -157,7 +157,7 @@ set tm=500
 map <c-a> ggVG
 
 " run scripts
-autocmd BufRead,BufNewFile *.py map <D-CR> :% w !python<CR>
+autocmd BufRead,BufNewFile *.py map <F5> :% w !python<CR>
 
 
 " vimrc statusline show current date and time
